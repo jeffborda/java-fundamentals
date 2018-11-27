@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb7508b3-c7be-4aa1-a306-237379f62666" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basics/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basics/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/basics/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basics/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,12 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/basics/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-              <folding>
-                <element signature="e#80#81#0" expanded="true" />
-                <element signature="e#115#116#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="188">
+              <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -65,8 +61,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="137" />
-    <option name="y" value="478" />
+    <option name="x" value="57" />
+    <option name="y" value="122" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
@@ -103,7 +99,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543341268644" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543344171325" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -151,7 +147,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="110" y="383" width="1400" height="784" extended-state="0" />
+    <frame x="-18" y="340" width="1400" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -194,12 +190,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/basics/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <element signature="e#80#81#0" expanded="true" />
-            <element signature="e#115#116#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="188">
+          <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
         </state>
       </provider>
     </entry>
