@@ -45,7 +45,7 @@ public class Main {
         do {
             double randomNumber = Math.round(Math.random() * 10.0) / 10.0; //Rounds to one decimal ie: 0.7
 
-            System.out.println(randomNumber);
+            //System.out.println(randomNumber);
 
             if((randomNumber >= 0.5 && previousHeads) || (randomNumber >= 0.5 && headsCount == 0)) {
                 headsCount++;
