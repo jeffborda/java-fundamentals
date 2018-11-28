@@ -28,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+            <state relative-caret-position="331">
+              <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,11 +37,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/LibraryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="46" column="118" selection-start-line="46" selection-start-column="118" selection-end-line="46" selection-end-column="118" />
+            <state relative-caret-position="357">
+              <caret line="24" column="103" selection-start-line="24" selection-start-column="103" selection-end-line="24" selection-end-column="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="102">
+                <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -57,6 +69,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/Library.java" />
         <option value="$PROJECT_DIR$/src/test/java/LibraryTest.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -119,7 +132,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543431013454" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543432784566" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -175,18 +188,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LibraryTest_testRoll - 2018.11.28 at 09h 27m 55s.xml">
-      <configuration name="LibraryTest.testRoll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_testRoll - 2018.11.28 at 09h 50m 46s.xml">
-      <configuration name="LibraryTest.testRoll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_testRoll - 2018.11.28 at 09h 50m 55s.xml">
-      <configuration name="LibraryTest.testRoll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_testRoll - 2018.11.28 at 09h 50m 59s.xml">
-      <configuration name="LibraryTest.testRoll" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LibraryTest_testRoll - 2018.11.28 at 09h 51m 01s.xml">
       <configuration name="LibraryTest.testRoll" configurationId="JUnit" />
     </history-entry>
@@ -200,6 +201,21 @@
       <configuration name="LibraryTest.testContainsDuplicates" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LibraryTest_testContainsDuplicates - 2018.11.28 at 10h 29m 03s.xml">
+      <configuration name="LibraryTest.testContainsDuplicates" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testContainsDuplicates - 2018.11.28 at 11h 00m 26s.xml">
+      <configuration name="LibraryTest.testContainsDuplicates" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testContainsDuplicates - 2018.11.28 at 11h 07m 19s.xml">
+      <configuration name="LibraryTest.testContainsDuplicates" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testContainsDuplicates - 2018.11.28 at 11h 11m 48s.xml">
+      <configuration name="LibraryTest.testContainsDuplicates" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testContainsDuplicates - 2018.11.28 at 11h 12m 19s.xml">
+      <configuration name="LibraryTest.testContainsDuplicates" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testContainsDuplicates - 2018.11.28 at 11h 12m 49s.xml">
       <configuration name="LibraryTest.testContainsDuplicates" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -276,8 +292,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+        <state relative-caret-position="331">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -286,8 +302,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="46" column="118" selection-start-line="46" selection-start-column="118" selection-end-line="46" selection-end-column="118" />
+        <state relative-caret-position="357">
+          <caret line="24" column="103" selection-start-line="24" selection-start-column="103" selection-end-line="24" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="102">
+            <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

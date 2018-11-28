@@ -24,8 +24,10 @@ public class Library {
 
         for(int i = 0; i < input.length; i++) {
             for(int j = 0; j < input.length; j++){
-                if(input[i] == input[j]){
-                    return true;
+                if(i != j) {
+                    if(input[i] == input[j]){
+                        return true;
+                    }
                 }
             }
         }

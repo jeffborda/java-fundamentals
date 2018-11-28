@@ -14,7 +14,15 @@ public class LibraryTest {
     @Test
     public void testRoll() {
         Library classUnderTest = new Library();
+        int[] dice = new int[6];
+        dice = classUnderTest.roll(6);
         assertEquals("roll method should return 'true'", 6, classUnderTest.roll(6).length);
+        assertTrue("roll medthod should return number beween 1 and 6 inclusive", dice[0] >= 1 && dice[0] <= 6);
+        assertTrue("roll medthod should return number beween 1 and 6 inclusive", dice[0] >= 1 && dice[1] <= 6);
+        assertTrue("roll medthod should return number beween 1 and 6 inclusive", dice[0] >= 1 && dice[2] <= 6);
+        assertTrue("roll medthod should return number beween 1 and 6 inclusive", dice[0] >= 1 && dice[3] <= 6);
+        assertTrue("roll medthod should return number beween 1 and 6 inclusive", dice[0] >= 1 && dice[4] <= 6);
+        assertTrue("roll medthod should return number beween 1 and 6 inclusive", dice[0] >= 1 && dice[5] <= 6);
     }
 
     @Test
@@ -22,7 +30,7 @@ public class LibraryTest {
         Library classUnderTest = new Library();
         int[] noDuplicatesArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int[] hasDuplicatesArray = {1, 2, 3, 4, 1, 2};
-        //assertFalse("containsDuplicates should return 'false'", classUnderTest.containsDuplicates(noDuplicatesArray));
+        assertFalse("containsDuplicates should return 'false'", classUnderTest.containsDuplicates(noDuplicatesArray));
         assertTrue("containsDuplicates should return 'true'", classUnderTest.containsDuplicates(hasDuplicatesArray));
     }
 
@@ -41,9 +49,11 @@ public class LibraryTest {
         int[][] average1 = { {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, /* 5.5 = 6*/
                              {11, 12, 13, 14, 15, 16, 17}, /* 14 */
                              {1, 5, 7, 9, 22, 44}, /* 14.7 = 15 */
+                             {1, 5, 2, 1, 2}, /* 2.2 = 2 */
+                             {55, 99, 105, 88, 998, 478} /* a big number */
 
         };
 
-        assertEquals("calculateAverageOfArrays should return '6'", 6, classUnderTest.calculateAverageOfArrays(average1));
+        assertEquals("calculateAverageOfArrays should return '2'", 2, classUnderTest.calculateAverageOfArrays(average1));
     }
 }
