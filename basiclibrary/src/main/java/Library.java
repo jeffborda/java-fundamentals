@@ -48,9 +48,10 @@ public class Library {
         return (int) Math.round(result);
     }
 
-    public int calculateAverageOfArrays(int[][] input) {
+    public int[] calculateAverageOfArrays(int[][] input) {
 
         int lowestAverage = calculateAverage(input[0]);
+        int indexOfLowestAverage = 0;
 
         for(int i = 1; i < input.length; i++) {
 
@@ -58,8 +59,9 @@ public class Library {
 
             if(newAverage < lowestAverage) {
                 lowestAverage = newAverage;
+                indexOfLowestAverage = i;
             }
         }
-        return lowestAverage;
+        return input[indexOfLowestAverage];
     }
 }

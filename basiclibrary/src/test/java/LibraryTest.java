@@ -54,6 +54,8 @@ public class LibraryTest {
 
         };
 
-        assertEquals("calculateAverageOfArrays should return '2'", 2, classUnderTest.calculateAverageOfArrays(average1));
+        int[] expectedArray = {1, 5, 2, 1, 2};
+
+        assertArrayEquals("calculateAverageOfArrays should return array with lowest avg inside a 2D array", expectedArray, classUnderTest.calculateAverageOfArrays(average1) );
     }
 }
