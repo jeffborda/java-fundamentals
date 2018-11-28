@@ -19,6 +19,31 @@ public class LibraryTest {
 
     @Test
     public void testContainsDuplicates() {
+        Library classUnderTest = new Library();
+        int[] noDuplicatesArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] hasDuplicatesArray = {1, 2, 3, 4, 1, 2};
+        //assertFalse("containsDuplicates should return 'false'", classUnderTest.containsDuplicates(noDuplicatesArray));
+        assertTrue("containsDuplicates should return 'true'", classUnderTest.containsDuplicates(hasDuplicatesArray));
+    }
 
+    @Test
+    public void testCalculateAverage() {
+        Library classUnderTest = new Library();
+        int[] average1 = {1, 10, 25, 51}; // avg == 21.75, rounds to 22
+        int[] average2 = {10, 10, 10, 10, 10, 10, 10, 10, 10, 10}; // avg = 10
+        assertEquals("calculateAverage should return '22'", 22, classUnderTest.calculateAverage(average1));
+        assertEquals("calculateAverage should return '22'", 10, classUnderTest.calculateAverage(average2));
+    }
+
+    @Test
+    public void testCalculateAverageOfArrays() {
+        Library classUnderTest = new Library();
+        int[][] average1 = { {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, /* 5.5 = 6*/
+                             {11, 12, 13, 14, 15, 16, 17}, /* 14 */
+                             {1, 5, 7, 9, 22, 44}, /* 14.7 = 15 */
+
+        };
+
+        assertEquals("calculateAverageOfArrays should return '6'", 6, classUnderTest.calculateAverageOfArrays(average1));
     }
 }

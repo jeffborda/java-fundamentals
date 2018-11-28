@@ -4,6 +4,9 @@
     <list default="true" id="d8860e54-0110-4514-b56d-d122a1a8e8a6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LibraryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/basics/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/basics/Main.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -22,20 +25,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="279">
+              <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/LibraryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="389">
+              <caret line="46" column="118" selection-start-line="46" selection-start-column="118" selection-end-line="46" selection-end-column="118" />
             </state>
           </provider>
         </entry>
@@ -113,7 +119,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543427193228" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543431013454" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -127,7 +133,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.LibraryTest.testContainsDuplicates">
+    <configuration name="LibraryTest.testContainsDuplicates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="basiclibrary.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LibraryTest" />
+      <option name="METHOD_NAME" value="testContainsDuplicates" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LibraryTest.testRoll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basiclibrary.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -140,6 +156,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.testContainsDuplicates" />
         <item itemvalue="JUnit.LibraryTest.testRoll" />
       </list>
     </recent_temporary>
@@ -160,6 +177,30 @@
   <component name="TestHistory">
     <history-entry file="LibraryTest_testRoll - 2018.11.28 at 09h 27m 55s.xml">
       <configuration name="LibraryTest.testRoll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testRoll - 2018.11.28 at 09h 50m 46s.xml">
+      <configuration name="LibraryTest.testRoll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testRoll - 2018.11.28 at 09h 50m 55s.xml">
+      <configuration name="LibraryTest.testRoll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testRoll - 2018.11.28 at 09h 50m 59s.xml">
+      <configuration name="LibraryTest.testRoll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testRoll - 2018.11.28 at 09h 51m 01s.xml">
+      <configuration name="LibraryTest.testRoll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testRoll - 2018.11.28 at 09h 51m 04s.xml">
+      <configuration name="LibraryTest.testRoll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testContainsDuplicates - 2018.11.28 at 10h 08m 45s.xml">
+      <configuration name="LibraryTest.testContainsDuplicates" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testContainsDuplicates - 2018.11.28 at 10h 28m 48s.xml">
+      <configuration name="LibraryTest.testContainsDuplicates" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testContainsDuplicates - 2018.11.28 at 10h 29m 03s.xml">
+      <configuration name="LibraryTest.testContainsDuplicates" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -233,17 +274,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/LibraryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="279">
+          <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Library.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="389">
+          <caret line="46" column="118" selection-start-line="46" selection-start-column="118" selection-end-line="46" selection-end-column="118" />
         </state>
       </provider>
     </entry>

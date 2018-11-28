@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 /*
@@ -21,6 +22,42 @@ public class Library {
 
     public boolean containsDuplicates(int[] input) {
 
+        for(int i = 0; i < input.length; i++) {
+            for(int j = 0; j < input.length; j++){
+                if(input[i] == input[j]){
+                    return true;
+                }
+            }
+        }
         return false;
+    }
+
+    public int calculateAverage(int[] input) {
+
+        double result = 0;
+
+        for(int i = 0; i < input.length; i++) {
+            result += input[i];
+        }
+
+        result = result / input.length;
+
+
+        return (int) Math.round(result);
+    }
+
+    public int calculateAverageOfArrays(int[][] input) {
+
+        int lowestAverage = calculateAverage(input[0]);
+
+        for(int i = 1; i < input.length; i++) {
+
+            int newAverage = calculateAverage(input[i]);
+
+            if(newAverage < lowestAverage) {
+                lowestAverage = newAverage;
+            }
+        }
+        return lowestAverage;
     }
 }
