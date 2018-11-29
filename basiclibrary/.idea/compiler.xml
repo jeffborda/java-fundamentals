@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="basiclibrary.main" target="11" />
       <module name="basiclibrary.test" target="11" />
+      <module name="fundamentals.basiclibrary.main" target="11" />
+      <module name="fundamentals.basiclibrary.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
