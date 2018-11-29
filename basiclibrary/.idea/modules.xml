@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/basiclibrary.iml" filepath="$PROJECT_DIR$/basiclibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/basiclibrary.main.iml" filepath="$PROJECT_DIR$/.idea/modules/basiclibrary.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/basiclibrary.test.iml" filepath="$PROJECT_DIR$/.idea/modules/basiclibrary.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fundamentals.basiclibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/fundamentals.basiclibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fundamentals.basiclibrary.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fundamentals.basiclibrary.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fundamentals.basiclibrary.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fundamentals.basiclibrary.test.iml" />
     </modules>
   </component>
 </project>
