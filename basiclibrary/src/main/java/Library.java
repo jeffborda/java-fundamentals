@@ -78,9 +78,6 @@ public class Library {
         int min = (int) Collections.min(uniqueTemperatures);
         int max = (int) Collections.max(uniqueTemperatures);
 
-
-
-
         System.out.println("High: " + max);
         System.out.println("Low: " + min);
 
@@ -89,7 +86,31 @@ public class Library {
                 System.out.println("Never saw temperature: " + i);
             }
         }
+    }
 
+    public static String tally(List<String> votes) {
+
+        HashMap<String, Integer> voteTally = new HashMap<>();
+        int maxVotes = 0;
+        String winner = "";
+
+        for(String name : votes) {
+            voteTally.put(name, 0);
+        }
+
+        for(String name : votes ) {
+            voteTally.put(name, voteTally.get(name) + 1);
+        }
+
+        for (String key: voteTally.keySet()) {
+
+            if(voteTally.get(key) > maxVotes) {
+                maxVotes = voteTally.get(key);
+                winner = key;
+            }
+        }
+
+        return winner;
     }
 
 
