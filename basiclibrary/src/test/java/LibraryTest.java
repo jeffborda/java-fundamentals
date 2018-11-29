@@ -94,7 +94,8 @@ public class LibraryTest {
 
         String winner = classUnderTest.tally(votes);
         System.out.println(winner + " received the most votes!");
-        
+
         assertEquals("Winner should be 'Bush'", "Bush", classUnderTest.tally(votes));
     }
+
 }
