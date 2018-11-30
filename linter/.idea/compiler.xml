@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="fundamentals.linter.main" target="11" />
+      <module name="fundamentals.linter.test" target="11" />
       <module name="linter.main" target="11" />
       <module name="linter.test" target="11" />
     </bytecodeTargetLevel>

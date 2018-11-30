@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fundamentals.linter.iml" filepath="$PROJECT_DIR$/.idea/modules/fundamentals.linter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fundamentals.linter.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fundamentals.linter.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fundamentals.linter.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fundamentals.linter.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/linter.iml" filepath="$PROJECT_DIR$/linter.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/linter.main.iml" filepath="$PROJECT_DIR$/.idea/modules/linter.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/linter.test.iml" filepath="$PROJECT_DIR$/.idea/modules/linter.test.iml" />
