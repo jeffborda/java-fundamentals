@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="bitmap-transformer.main" target="11" />
       <module name="bitmap-transformer.test" target="11" />
+      <module name="fundamentals.bitmap-transformer.main" target="11" />
+      <module name="fundamentals.bitmap-transformer.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
