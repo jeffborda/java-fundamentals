@@ -13,29 +13,18 @@ public class App {
 
     public static void main(String[] args) {
 
-        for(String arg : args) {
-            System.out.println("\t" + arg);
-        }
+//        for(String arg : args) {
+//            System.out.println("\t" + arg);
+//        }
 
         //Bitmap bitmap = new Bitmap(args[0], args[1], args[2]);
 
         // if args[2] == "flip"
         //    bitmap.flip();
 
-        BufferedImage bmp = null;
+        Bitmap bmp = new Bitmap(args[0], args[1], args[2]);
 
-        try {
-            bmp = ImageIO.read(new File("resources/smiley.bmp"));
 
-            for(int i = 0; i < bmp.getHeight(); i++) {
-                for(int j = 0; j < bmp.getWidth(); j++) {
-                    System.out.println(bmp.getRGB(i, j));
-                }
-            }
-
-        } catch (IOException e) {
-            System.out.println(e);
-        }
 
     }
 
