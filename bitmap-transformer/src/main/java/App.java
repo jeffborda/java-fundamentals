@@ -13,16 +13,21 @@ public class App {
 
     public static void main(String[] args) {
 
-//        for(String arg : args) {
-//            System.out.println("\t" + arg);
-//        }
+        //Bitmap bmp = new Bitmap(args[0], args[1], args[2]);
 
-        //Bitmap bitmap = new Bitmap(args[0], args[1], args[2]);
+        Bitmap bmp1 = new Bitmap("resources/smiley.bmp", "resources/smiley_test.bmp", "no_transform");
+        Bitmap bmp2 = new Bitmap("resources/nice_day.bmp", "resources/nice_day_test.bmp", "no_transform");
+//        bmp1.flipVertically();
+//        bmp2.flipVertically();
 
-        // if args[2] == "flip"
-        //    bitmap.flip();
+//        bmp1.flipHorizontally();
+//        bmp2.flipHorizontally();
 
-        Bitmap bmp = new Bitmap(args[0], args[1], args[2]);
+
+        bmp1.save();
+        bmp2.save();
+
+
 
 
 

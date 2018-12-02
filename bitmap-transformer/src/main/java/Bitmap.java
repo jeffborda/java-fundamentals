@@ -9,33 +9,27 @@ import java.util.List;
 
 public class Bitmap {
 
-    private String input;
-    private String output;
+    private Path inputPath;
+    private Path outputPath;
     private String transform;
-    BufferedImage bmp = null;
+    private BufferedImage bmpData;
 
 
 
     public Bitmap(String input, String output, String transform) {
         System.out.println("in the Bitmap constructor");
 
-        this.input = input;
-        this.output = output;
+        this.inputPath = FileSystems.getDefault().getPath(input);
+        this.outputPath = FileSystems.getDefault().getPath(output);
         this.transform = transform;
 
-        Path inputPath = FileSystems.getDefault().getPath(input);
+        BufferedImage bmp = null;
+
 
 
         try {
-            //bmp = ImageIO.read(new File(input)); //"resources/smiley.bmp"
-
-            for(int i = 0; i < bmp.getHeight(); i++) {
-                for(int j = 0; j < bmp.getWidth(); j++) {
-                    System.out.println(bmp.getRGB(j, i));
-                }
-            }
-
-            this.bmp = ImageIO.read(inputPath.toFile());
+            bmp = ImageIO.read(inputPath.toFile());
+            this.bmpData = bmp;
 
         } catch (IOException e) {
             System.out.println(e);
@@ -43,12 +37,41 @@ public class Bitmap {
     }
 
 
-    public void flip() {
-        //read in file
-        //save
+    public void flipVertically() {
+
+        int height = this.bmpData.getHeight();
+        int width = this.bmpData.getWidth();
+
+        for(int y = 0; y < height / 2; y++) {
+            for(int x = 0; x < width; x++) {
+                int temp = this.bmpData.getRGB(x, y);
+                this.bmpData.setRGB(x, y, this.bmpData.getRGB(x, height - y - 1));
+                this.bmpData.setRGB(x, height - y - 1, temp);
+            }
+        }
+    }
+
+    public void flipHorizontally() {
+
+        int height = this.bmpData.getHeight();
+        int width = this.bmpData.getWidth();
+
+        for(int y = 0; y < height; y++) {
+            for(int x = 0; x < width / 2; x++) {
+                int temp = this.bmpData.getRGB(x, y);
+                this.bmpData.setRGB(x, y, this.bmpData.getRGB(width - x - 1, y));
+                this.bmpData.setRGB(width - x - 1, y, temp);
+            }
+        }
     }
 
     public boolean save() {
+
+        try {
+            return ImageIO.write(bmpData, "bmp", outputPath.toFile());
+        } catch (IOException e) {
+            System.out.println(e);
+        }
 
         return false;
     }
