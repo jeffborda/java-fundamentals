@@ -8,25 +8,22 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Bitmap class reads in a bmp file, provides image transformations, and can then save the output to a new file.
+ */
 public class Bitmap {
 
     private Path inputPath;
     private Path outputPath;
-    private String transform;
     private BufferedImage bmpData;
 
 
-
-    public Bitmap(String input, String output, String transform) {
-        System.out.println("in the Bitmap constructor");
+    public Bitmap(String input, String output) {
 
         this.inputPath = FileSystems.getDefault().getPath(input);
         this.outputPath = FileSystems.getDefault().getPath(output);
-        this.transform = transform;
 
         BufferedImage bmp = null;
-
-
 
         try {
             bmp = ImageIO.read(inputPath.toFile());
@@ -37,7 +34,14 @@ public class Bitmap {
         }
     }
 
+    // Constructor for testing
+    public Bitmap(BufferedImage bmp) {
+        this.bmpData = bmp;
+    }
 
+    /**
+     * Flips an image across the vertically.
+     */
     public void flipVertically() {
 
         int height = this.bmpData.getHeight();
@@ -52,6 +56,9 @@ public class Bitmap {
         }
     }
 
+    /**
+     * Flips an image across the horizontally.
+     */
     public void flipHorizontally() {
 
         int height = this.bmpData.getHeight();
@@ -66,7 +73,10 @@ public class Bitmap {
         }
     }
 
-    public void redBorder() {
+    /**
+     * Adds an inset red border to the image.
+     */
+    public void addRedBorder() {
 
         int height = this.bmpData.getHeight();
         int width = this.bmpData.getWidth();
@@ -80,18 +90,41 @@ public class Bitmap {
         }
     }
 
-    public void toBlackAndWhite() {
+    /**
+     * Brightens the colors of the image.
+     */
+    public void brighten() {
 
         int height = this.bmpData.getHeight();
         int width = this.bmpData.getWidth();
 
         for(int y = 0; y < height; y++) {
             for(int x = 0; x < width; x++) {
-                this.bmpData.setRGB(x, y, this.bmpData.getRGB(x, y) - 10);
+                Color color = new Color(this.bmpData.getRGB(x, y));
+                this.bmpData.setRGB(x, y, color.brighter().getRGB());
             }
         }
     }
 
+    /**
+     * Darkens the colors of an image.
+     */
+    public void darken() {
+
+        int height = this.bmpData.getHeight();
+        int width = this.bmpData.getWidth();
+
+        for(int y = 0; y < height; y++) {
+            for(int x = 0; x < width; x++) {
+                Color color = new Color(this.bmpData.getRGB(x, y));
+                this.bmpData.setRGB(x, y, color.darker().getRGB());
+            }
+        }
+    }
+
+    /**
+     * Saves output to the given file name.
+     */
     public boolean save() {
 
         try {
@@ -101,6 +134,10 @@ public class Bitmap {
         }
 
         return false;
+    }
+
+    public BufferedImage getImageData() {
+        return this.bmpData;
     }
 
 }

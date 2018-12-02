@@ -13,29 +13,18 @@ public class App {
 
     public static void main(String[] args) {
 
-        //Bitmap bmp = new Bitmap(args[0], args[1], args[2]);
+        Bitmap bmpImage = new Bitmap(args[0], args[1]);
 
-        Bitmap bmp1 = new Bitmap("resources/smiley.bmp", "resources/smiley_test.bmp", "no_transform");
-        Bitmap bmp2 = new Bitmap("resources/nice_day.bmp", "resources/nice_day_test.bmp", "no_transform");
-//        bmp1.flipVertically();
-//        bmp2.flipVertically();
+        switch(args[2]){
+            case "flipVertically" : bmpImage.flipVertically(); break;
+            case "flipHorizontally" : bmpImage.flipHorizontally(); break;
+            case "addRedBorder" : bmpImage.addRedBorder(); break;
+            case "brighten" : bmpImage.brighten(); break;
+            case "darken" : bmpImage.darken(); break;
+            default : System.out.println("Invalid Transform. Choices: flipVertically, flipHorizontally, addRedBorder, brighten, or darken.");
+        }
 
-//        bmp1.flipHorizontally();
-//        bmp2.flipHorizontally();
-
-//        bmp1.redBorder();
-//        bmp2.redBorder();
-
-        bmp1.toBlackAndWhite();
-        bmp2.toBlackAndWhite();
-
-        bmp1.save();
-        bmp2.save();
-
-
-
-
-
+        bmpImage.save();
     }
 
 }
