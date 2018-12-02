@@ -23,6 +23,11 @@ public class App {
 //        bmp1.flipHorizontally();
 //        bmp2.flipHorizontally();
 
+//        bmp1.redBorder();
+//        bmp2.redBorder();
+
+        bmp1.toBlackAndWhite();
+        bmp2.toBlackAndWhite();
 
         bmp1.save();
         bmp2.save();
