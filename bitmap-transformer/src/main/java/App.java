@@ -13,19 +13,18 @@ public class App {
 
     public static void main(String[] args) {
 
-//        for(String arg : args) {
-//            System.out.println("\t" + arg);
-//        }
+        Bitmap bmpImage = new Bitmap(args[0], args[1]);
 
-        //Bitmap bitmap = new Bitmap(args[0], args[1], args[2]);
+        switch(args[2]){
+            case "flipVertically" : bmpImage.flipVertically(); break;
+            case "flipHorizontally" : bmpImage.flipHorizontally(); break;
+            case "addRedBorder" : bmpImage.addRedBorder(); break;
+            case "brighten" : bmpImage.brighten(); break;
+            case "darken" : bmpImage.darken(); break;
+            default : System.out.println("Invalid Transform. Choices: flipVertically, flipHorizontally, addRedBorder, brighten, or darken.");
+        }
 
-        // if args[2] == "flip"
-        //    bitmap.flip();
-
-        Bitmap bmp = new Bitmap(args[0], args[1], args[2]);
-
-
-
+        bmpImage.save();
     }
 
 }
