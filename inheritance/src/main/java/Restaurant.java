@@ -17,8 +17,7 @@ public class Restaurant {
         this.reviewList = new LinkedList<>();
     }
 
-    public void addReview(String body, String author, int stars) {
-        Review review = new Review(body, author, stars);
+    public void addReview(Review review) {
         reviewList.add(review);
         this.updateStars();
     }
@@ -29,6 +28,10 @@ public class Restaurant {
             total += review.getStars();
         }
         this.stars = total / reviewList.size();
+    }
+
+    public LinkedList getReviewList() {
+        return reviewList;
     }
 
 

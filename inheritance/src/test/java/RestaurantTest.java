@@ -17,15 +17,23 @@ public class RestaurantTest {
         Restaurant mcdonalds = new Restaurant("McDonald's", 1);
         assertEquals("Should print name followed by dollar signs then stars.", "McDonald's: $, No reviews.\nReviews: ", mcdonalds.toString());
 
-        bobs.addReview("I love Bob's!", "Jeff", 3);
+        Review bobReview1 = new Review("I love Bob's!", "Jeff", 3);
+        bobs.addReview(bobReview1);
         assertEquals("Should print the Restaurant data followed by Reviews.", "Bob's Burgers: $$, ***\n" + "Reviews: *** I love Bob's! Written by: Jeff.\n", bobs.toString());
 
-        bobs.addReview("I got ecoli from Bob's. Thanks a lot!", "Alissa", 1);
+        Review bobReview2 = new Review("I got ecoli from Bob's. Thanks a lot!", "Alissa", 1);
+        bobs.addReview(bobReview2);
         assertEquals("Should print the Restaurant data followed by Reviews.", "Bob's Burgers: $$, **\n" + "Reviews: *** I love Bob's! Written by: Jeff.\n" + "* I got ecoli from Bob's. Thanks a lot! Written by: Alissa.\n", bobs.toString());
     }
 
     @Test
     public void testAddReview() {
+
+        Restaurant robertos = new Restaurant("Roberto's", 3);
+        Review robertos
+        robertos.addReview("Review body.", "Name", 4);
+        assertEquals("Make sure the list is size '1' with one review added.", 1, robertos.getReviewList().size());
+
 
     }
 
