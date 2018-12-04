@@ -43,7 +43,7 @@ public class Restaurant {
     public int getStars() {
         return stars;
     }
-    
+
     @Override
     public String toString() {
 
