@@ -17,11 +17,17 @@ public class Restaurant {
         this.reviewList = new LinkedList<>();
     }
 
+    /**
+     * Adds a review into the reviewList.
+     */
     public void addReview(Review review) {
         reviewList.add(review);
         this.updateStars();
     }
 
+    /**
+     * Helper function to update the average Restaurant rating when review added.
+     */
     private void updateStars() {
         int total = 0;
         for(Review review : reviewList) {
@@ -34,8 +40,10 @@ public class Restaurant {
         return reviewList;
     }
 
-
-
+    public int getStars() {
+        return stars;
+    }
+    
     @Override
     public String toString() {
 
@@ -43,14 +51,22 @@ public class Restaurant {
         String starSymbols = "";
         String reviews = "";
 
-        for(int i = 0; i < this.price; i++) {
-            priceSymbols += "$";
+        if(price <= 0) {
+            priceSymbols = "$";
         }
-        for(int i = 0; i < this.stars; i++) {
-            starSymbols += "*";
+        else {
+            for(int i = 0; i < price; i++) {
+                priceSymbols += "$";
+            }
         }
-        if(stars == 0) {
+
+        if(stars <= 0) {
             starSymbols = "No reviews.";
+        }
+        else {
+            for(int i = 0; i < stars; i++) {
+                starSymbols += "*";
+            }
         }
 
         for(Review review : reviewList) {

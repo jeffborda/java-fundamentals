@@ -30,11 +30,29 @@ public class RestaurantTest {
     public void testAddReview() {
 
         Restaurant robertos = new Restaurant("Roberto's", 3);
-        Review robertos
-        robertos.addReview("Review body.", "Name", 4);
+        Review robertosReview1 = new Review("Review body.", "Name", 4);
+        robertos.addReview(robertosReview1);
         assertEquals("Make sure the list is size '1' with one review added.", 1, robertos.getReviewList().size());
+        assertEquals("Make sure review String has been added correctly.", "**** Review body. Written by: Name.", robertos.getReviewList().get(0).toString());
 
+        Review robertosReview2 = new Review("I like Roberto's.", "James", 3);
+        robertos.addReview(robertosReview2);
+        assertEquals("Make sure list is now size '2'", 2, robertos.getReviewList().size());
+    }
 
+    @Test
+    public void testUpdateStars() {
+
+        Restaurant mcdonalds = new Restaurant("McDonald's", 3);
+        assertEquals("With no reviews, stars should be '0'.", 0, mcdonalds.getStars());
+
+        Review mcdonaldsReview = new Review("I like the fries.", "Carol", 4);
+        mcdonalds.addReview(mcdonaldsReview);
+        assertEquals("One review added with 4 stars, so star average should be '4'.", 4, mcdonalds.getStars());
+
+        Review mcdonaldsReview2 = new Review("Not bad.", "Zahra", 2);
+        mcdonalds.addReview(mcdonaldsReview2);
+        assertEquals("Average should now be '3'.", 3, mcdonalds.getStars());
     }
 
 }
