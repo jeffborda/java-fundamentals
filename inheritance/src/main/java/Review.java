@@ -6,7 +6,7 @@ public class Review {
     private Restaurant restaurant;
     private Shop shop;
     private Theater theater;
-    String movie;
+    private String movie;
 
     public Review(String body, String author, int stars) {
         this.body = body;
@@ -68,13 +68,25 @@ public class Review {
         return theater;
     }
 
+    public String getMovie() {
+        return movie;
+    }
+
     @Override
     public String toString() {
 
         String starSymbols = "";
+        String movieString;
         for(int i = 0; i < this.stars; i++) {
             starSymbols += "*";
         }
-        return starSymbols + " " + body + " Written by: " + author + ".";
+        if(movie == null) {
+            movieString = "";
+        }
+        else {
+            movieString = " Movie: " + movie;
+        }
+
+        return starSymbols + " " + body + " Written by: " + author + "." + movieString;
     }
 }

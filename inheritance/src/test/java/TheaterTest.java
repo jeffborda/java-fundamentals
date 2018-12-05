@@ -53,8 +53,17 @@ public class TheaterTest {
         assertTrue("List should now be empty after removing all movies from the list.", cineplex.getMovieList().isEmpty());
     }
 
-//    @Test
-//    public String testToString() {
-//        return null;
-//    }
+    @Test
+    public void testToString() {
+        Theater cineplex = new Theater("Cineplex");
+        assertEquals("Test toString without movies or reviews", "Cineplex\n" + "Movies Playing: No movies currently playing.\n" + "Theater Reviews: No reviews.", cineplex.toString());
+        cineplex.addMovie("Harry Potter");
+        cineplex.addMovie("Pets");
+        Review review1 = new Review(cineplex, "Pets", "Loved it!", "John", 4);
+        Review review2 = new Review(cineplex, "Harry Potter", "Hated it!", "Beth", 2);
+        assertEquals("Test toString without reviews.", "Cineplex\n" + "Movies Playing: Harry Potter, Pets\n" + "Theater Reviews: No reviews.", cineplex.toString());
+        cineplex.addReview(review1);
+        cineplex.addReview(review2);
+        assertEquals("Test toString with movies and reviews.", "Cineplex\n" + "Movies Playing: Harry Potter, Pets\n" + "Theater Reviews: \n" + "**** Loved it! Written by: John. Movie: Pets\n" + "** Hated it! Written by: Beth. Movie: Harry Potter", cineplex.toString());
+    }
 }

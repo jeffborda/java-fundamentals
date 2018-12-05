@@ -50,6 +50,7 @@ public class Theater implements Business {
 
         String reviews = "";
         String movies = "";
+
         for(Review review : reviewList) {
             reviews += "\n" + review.toString();
         }
@@ -67,6 +68,7 @@ public class Theater implements Business {
             movies += "No movies currently playing.";
         }
 
-        return name + "\n" + " Movies Playing: " + movies + "\n" + "Theater Reviews: " + reviews;
+
+        return name + "\n" + "Movies Playing: " + movies + "\n" + "Theater Reviews: " + reviews;
     }
 }
