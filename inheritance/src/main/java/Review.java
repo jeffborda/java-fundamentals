@@ -11,6 +11,10 @@ public class Review {
         this.stars = stars;
     }
 
+    public Review(String body, String author, int stars, String movie) {
+
+    }
+
     public int getStars() {
         return stars;
     }

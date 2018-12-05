@@ -31,10 +31,26 @@ public class TheaterTest {
 
     @Test
     public void testAddMovie() {
+        Theater cineplex = new Theater("Cineplex");
+        assertTrue("Confirm that movie list is empty to start with.", cineplex.getMovieList().isEmpty());
+        cineplex.addMovie("Harry Potter");
+        assertEquals("Confirm list is size '1' after adding a movie.", 1, cineplex.getMovieList().size());
+        assertEquals("Confirm movie title in the list is 'Harry Potter'.", "Harry Potter", cineplex.getMovieList().getFirst());
+        cineplex.addMovie("Pets");
+        cineplex.addMovie("2001 A Space Odyssey");
+        assertEquals("Confirm movie list is now size '3' after two more adds.", 3, cineplex.getMovieList().size());
     }
 
     @Test
     public void testRemoveMovie() {
+        Theater cineplex = new Theater("Cineplex");
+        cineplex.addMovie("Harry Potter");
+        cineplex.addMovie("Pets");
+        assertFalse("Should return 'false' when removing a movie not in the list.", cineplex.removeMovie("Frozen"));
+        assertTrue("Should return 'true' when removing a movie in the list.", cineplex.removeMovie("Harry Potter"));
+        assertFalse("Confirm that 'Harry Potter' has been removed, should return 'false'.", cineplex.removeMovie("Harry Potter"));
+        assertTrue("Should return 'true' when removing a movie in the list.", cineplex.removeMovie("Pets"));
+        assertTrue("List should now be empty after removing all movies from the list.", cineplex.getMovieList().isEmpty());
     }
 
 //    @Test
