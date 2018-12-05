@@ -38,6 +38,7 @@ public class RestaurantTest {
         Review robertosReview2 = new Review("I like Roberto's.", "James", 3);
         robertos.addReview(robertosReview2);
         assertEquals("Make sure list is now size '2'", 2, robertos.getReviewList().size());
+
     }
 
     @Test
