@@ -19,6 +19,18 @@ public class Review {
         this.business = business;
     }
 
+    public String getBody() {
+        return body;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public Object getBusiness() {
+        return business;
+    }
+
     @Override
     public String toString() {
 

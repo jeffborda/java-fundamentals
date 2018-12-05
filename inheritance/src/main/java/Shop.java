@@ -62,9 +62,12 @@ public class Shop implements Business {
 
         String reviews = "";
         for(Review review : reviewList) {
-            reviews += review.toString();
+            reviews += "\n" + review.toString();
+        }
+        if(reviews == "") {
+            reviews += "No reviews.";
         }
 
-        return name + ": " + priceSymbols + ", " + "Description: " + description + "\n" + "Reviews: " + reviews;
+        return name + ": " + description + " " + priceSymbols + "\n" + "Reviews: " + reviews;
     }
 }
