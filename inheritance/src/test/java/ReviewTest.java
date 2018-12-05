@@ -5,6 +5,11 @@ import static org.junit.Assert.*;
 public class ReviewTest {
 
     @Test
+    public void testConstructor() {
+        Restaurant mcdonalds = new Restaurant("McDonald's")
+    }
+
+    @Test
     public void testToString() {
         Review bobsReview = new Review("Bob's Burgers was really good, and they have wonderful service.", "Dan", 4);
         String reviewBody = "Bob's Burgers was really good, and they have wonderful service.";

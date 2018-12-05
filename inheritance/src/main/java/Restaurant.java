@@ -21,7 +21,6 @@ public class Restaurant implements Business {
      * Adds a review into the reviewList.
      */
     public void addReview(Review review) {
-        review.setRestaurant(this);
         reviewList.add(review);
         this.updateStars();
     }
