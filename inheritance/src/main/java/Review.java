@@ -3,6 +3,7 @@ public class Review {
     private String body;
     private String author;
     private int stars;
+    private Object business;
 
     public Review(String body, String author, int stars) {
         this.body = body;
@@ -12,6 +13,10 @@ public class Review {
 
     public int getStars() {
         return stars;
+    }
+
+    public void setRestaurant(Object business) {
+        this.business = business;
     }
 
     @Override
