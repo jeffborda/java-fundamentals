@@ -18,7 +18,6 @@ public class Bitmap {
     private Path outputPath;
     private BufferedImage bmpData;
 
-
     public Bitmap(String input, String output) {
 
         this.inputPath = FileSystems.getDefault().getPath(input);
@@ -131,11 +130,13 @@ public class Bitmap {
     public boolean save() {
 
         try {
-            return ImageIO.write(bmpData, "bmp", outputPath.toFile());
+            ImageIO.write(bmpData, "bmp", outputPath.toFile());
+            System.out.println("Successfully saved transformed image to: " + outputPath);
+            return true;
         } catch (IOException e) {
             System.out.println(e);
         }
-
+        System.out.println("There was an error transforming your image.");
         return false;
     }
 
