@@ -79,10 +79,11 @@ public class Bitmap {
 
         int height = this.bmpData.getHeight();
         int width = this.bmpData.getWidth();
+        int borderWidth = 5;
 
         for(int y = 0; y < height; y++) {
             for(int x = 0; x < width; x++) {
-                if(y < 5 || y + 5 >= height || x < 5 || x + 5 >= width) {
+                if(y < borderWidth || y + borderWidth >= height || x < borderWidth || x + borderWidth >= width) {
                     this.bmpData.setRGB(x, y, Color.red.getRGB());
                 }
             }
