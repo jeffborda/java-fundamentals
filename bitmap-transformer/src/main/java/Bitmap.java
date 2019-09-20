@@ -1,6 +1,7 @@
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.FileSystems;
@@ -23,19 +24,15 @@ public class Bitmap {
         this.inputPath = FileSystems.getDefault().getPath(input);
         this.outputPath = FileSystems.getDefault().getPath(output);
 
-        BufferedImage bmp = null;
-
         try {
-            bmp = ImageIO.read(inputPath.toFile());
-            this.bmpData = bmp;
-
+            this.bmpData = ImageIO.read(inputPath.toFile());
         } catch (IOException e) {
             System.out.println(e);
         }
     }
 
     // Constructor for testing
-    public Bitmap(BufferedImage bmp) {
+    protected Bitmap(BufferedImage bmp) {
         this.bmpData = bmp;
     }
 
@@ -49,9 +46,9 @@ public class Bitmap {
 
         for(int y = 0; y < height / 2; y++) {
             for(int x = 0; x < width; x++) {
-                int temp = this.bmpData.getRGB(x, y);
+                int tempRGB = this.bmpData.getRGB(x, y);
                 this.bmpData.setRGB(x, y, this.bmpData.getRGB(x, height - y - 1));
-                this.bmpData.setRGB(x, height - y - 1, temp);
+                this.bmpData.setRGB(x, height - y - 1, tempRGB);
             }
         }
         this.save();
@@ -67,9 +64,9 @@ public class Bitmap {
 
         for(int y = 0; y < height; y++) {
             for(int x = 0; x < width / 2; x++) {
-                int temp = this.bmpData.getRGB(x, y);
+                int tempRGB = this.bmpData.getRGB(x, y);
                 this.bmpData.setRGB(x, y, this.bmpData.getRGB(width - x - 1, y));
-                this.bmpData.setRGB(width - x - 1, y, temp);
+                this.bmpData.setRGB(width - x - 1, y, tempRGB);
             }
         }
         this.save();

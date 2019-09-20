@@ -23,8 +23,6 @@ public class App {
             case "darken" : bmpImage.darken(); break;
             default : System.out.println("Invalid Transform. Choices: flipVertically, flipHorizontally, addRedBorder, brighten, or darken.");
         }
-
-        bmpImage.save();
     }
 
 }
