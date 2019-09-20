@@ -54,6 +54,7 @@ public class Bitmap {
                 this.bmpData.setRGB(x, height - y - 1, temp);
             }
         }
+        this.save();
     }
 
     /**
@@ -71,6 +72,7 @@ public class Bitmap {
                 this.bmpData.setRGB(width - x - 1, y, temp);
             }
         }
+        this.save();
     }
 
     /**
@@ -88,6 +90,7 @@ public class Bitmap {
                 }
             }
         }
+        this.save();
     }
 
     /**
@@ -104,6 +107,7 @@ public class Bitmap {
                 this.bmpData.setRGB(x, y, color.brighter().getRGB());
             }
         }
+        this.save();
     }
 
     /**
@@ -120,6 +124,7 @@ public class Bitmap {
                 this.bmpData.setRGB(x, y, color.darker().getRGB());
             }
         }
+        this.save();
     }
 
     /**
