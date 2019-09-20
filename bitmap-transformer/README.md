@@ -14,7 +14,11 @@ The bitmap class I made contains five transformations.
 It also contains a save() method, which writes out the transformed file to the disk.
 
 ## CLI
-The Command Line Interface requires three arguements:
+The Command Line Interface requires three arguments:
 1. input file path
 2. output file path
 3. desired image transformation
+
+Example:
+./gradlew run --args 'resources/nice_day.bmp resources/nice_day_after_run.bmp flipVertica
+lly'
